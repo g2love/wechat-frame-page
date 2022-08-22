@@ -1,0 +1,15 @@
+<!--pages/test/index.wxml-->
+<frame-page pageType="1">
+	<van-nav-bar slot="page-header" title="测试"  >
+		<text slot="left"></text>
+		<text slot="right"></text>
+	</van-nav-bar>
+	<view slot="page-content">
+		<van-button round  type="primary"  bindtap="test">测试按钮</van-button>
+		<van-button size="large" type="primary"  bindtap="goPage" data-url="/pages/page1/index">page1</van-button>
+		<van-button size="large" type="primary"  bindtap="goPage" data-url="/pages/page2/index">page2</van-button>
+		<van-button size="large" type="primary"  bindtap="goPage" data-url="/pages/page3/index">page3</van-button>
+		<van-button size="large" type="primary"  bindtap="goPage" data-url="/pages/page4/index">page4</van-button>
+		<view>text</view>
+	</view>
+</frame-page>

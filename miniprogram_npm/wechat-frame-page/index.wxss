@@ -1,0 +1,2 @@
+/* components/page/index.wxss */
+@import "./public.wxss";

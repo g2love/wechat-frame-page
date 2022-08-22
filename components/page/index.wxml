@@ -1,0 +1,28 @@
+<!--components/page/index.wxml-->
+<view class="bg-box" wx:if="{{bgSrc!=''&&bgSrc!=undefined}}">
+	<image class="bg" src="{{bgSrc}}" bindload="bgOk" binderror="bgOk"></image>
+</view>
+<view wx:if="{{pageShow}}" class="page" style="--header--:{{header}}px;--content--:{{content}}px;--statusBar--:{{statusBar}}px;--bottom--:{{bottom}}px;--footer--:{{footer}}px;--menuLeft--:{{menuLeft}}px;">
+	<view class="header">
+		<slot name="page-header"></slot>
+	</view>
+	<block wx:if="{{pageType==1}}">
+		<view  class="content" >
+			<slot name="page-content"></slot>
+		</view>
+	</block>
+	<block wx:if="{{pageType==2}}">
+		<view class="content2">
+			<slot name="page-content"></slot>
+		</view>
+		<view class="footer">
+			<slot name="page-footer"></slot>
+		</view>
+	</block>
+</view>
+<view wx:else class="page-loading">
+	<van-loading size="36px" text-size="20px" color="#fff" vertical>
+		<text style="color:#fff;">加载中...</text>
+	</van-loading>
+</view>
+  

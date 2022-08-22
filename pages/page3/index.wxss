@@ -1,0 +1,16 @@
+/* pages/page3/index.wxss */
+.pullDown-box,.pullDown,.pullUp{
+	width: 100vw;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.pullDown{
+	position: fixed;
+	top:var(--header--);
+	left: 0;
+}
+.target-pullUp{
+	opacity: 0;
+}

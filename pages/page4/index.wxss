@@ -1,0 +1,18 @@
+/* pages/page3/index.wxss */
+.pullDown,.pullUp{
+	width: 100vw;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* refresher-default-style="none" 没加这条属性就需要下面样式 */
+/* .pullDown{
+	position: fixed;
+	top:-70px;
+	left: 0;
+} */
+.scroll-content{
+	width:100vw;
+	height: var(--content--);
+}

@@ -1,0 +1,6 @@
+{
+  "navigationStyle":"custom",
+  "usingComponents": {
+    "van-field": "@vant/weapp/field/index"
+  }
+}

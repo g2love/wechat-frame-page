@@ -1,0 +1,69 @@
+<!--pages/page3/index.wxml-->
+<frame-page pageType="1"  >
+	<van-nav-bar slot="page-header" title="刷新-方式1"  bind:click-left="goBackHome" >
+		<van-icon  slot="left" name="arrow-left" />
+		<text slot="right"></text>
+	</van-nav-bar>
+
+
+	<view ref="content" slot="page-content">
+		<block wx:if="{{pullDown}}">
+			<!-- 下拉刷新显示区域 -->
+			<view class="pullDown-box">
+				<view class="pullDown">
+					<text>刷新中...</text>
+				</view>
+			</view>
+		</block>
+		<view>page3</view><view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view>page3</view>
+		<view class="target-pullUp" title="给上拉刷新做触发参考">给上拉刷新做触发参考</view>
+		<block wx:if="{{pullUp}}">
+			<!-- 上拉刷新显示区域 -->
+			<view class="pullUp">
+				<text>加载中...</text>
+			</view>
+		</block>
+	</view>
+	
+</frame-page>

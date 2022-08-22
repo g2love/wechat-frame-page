@@ -1,0 +1,20 @@
+<!--pages/page2/index.wxml-->
+<frame-page pageType="1">
+	<van-nav-bar slot="page-header" >
+		<text slot="left"></text>
+		<van-field slot="title"  value="{{ value }}" placeholder="请输入搜索关键词"  label=""  border="{{ false }}" 
+			use-button-slot  bind:change="onChange" bind:confirm="onSearch">
+			
+			<van-icon  slot="left-icon" name="arrow-left" bind:tap="goBackHome" />
+			<text class="search-btn" slot="button" bind:tap="onClick">搜索</text>
+		</van-field>
+		
+		
+		<text slot="right"></text>
+	</van-nav-bar>
+	
+	<view  slot="page-content">
+		<view>page2</view>
+	</view>
+	
+</frame-page>

@@ -1,0 +1,85 @@
+.page{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.header{
+  width: 100vw;
+  height: var(--header--);
+  box-sizing: border-box;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+   /* 如果用van-nav-bar就不需要padding-top，否则需要padding-top */
+  /* padding-top: var(--statusBar--); */
+}
+.content,.content2{
+  width: 100vw;
+  height: var(--content--);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+  margin-top:var(--header--) ;
+  
+}
+.content:after{
+  content: "";
+  display: block;
+  width: 100vw;
+  /* 无底部 */
+  height:var(--bottom--) ;
+
+  /* 如果有底部且用van-tabbar,height=4px*/
+  /* height:4px ; */
+}
+.content2:after{
+  content: "";
+  display: block;
+  width: 100vw;
+  /* 如果有底部且用van-tabbar,height=4px*/
+  height:4px ;
+}
+
+
+.footer{
+  width: 100vw;
+  height: var(--footer--);
+  box-sizing: border-box;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  /* 如果有底部且用van-tabbar就不需要padding-bottom，否则需要padding-bottom */
+  /* padding-bottom: var(--bottom--); */
+}
+
+
+.page-loading{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.bg-box{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+.bg-box .bg{
+  width: 100%;
+  height: 100%;
+}

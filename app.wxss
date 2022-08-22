@@ -1,0 +1,7 @@
+/**app.wxss**/
+.van-button{
+  margin-bottom: 10px;
+}
+.van-nav-bar,.van-tabbar{
+  background-color: transparent!important;
+}

@@ -1,0 +1,14 @@
+/* pages/page2/index.wxss */
+/* 搜索不在首页所以需要重置下面样式 */
+.van-cell{
+	width: var(--menuLeft--)!important;
+	position: absolute!important;
+	left: 0px !important;
+	padding-left: 0px!important;
+}
+.van-icon-arrow-left{
+	width: 40px;
+}
+.search-btn{
+	color: black;
+}
